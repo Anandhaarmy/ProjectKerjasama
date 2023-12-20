@@ -141,8 +141,10 @@
                                                             class="icon-ganteng fa-solid fa-file-arrow-down"></i>
                                                 <td class=" ">
                                                     <div class="action">
+                                                        @if(Auth::user()->role == 'admin')
                                                         <a href="{{ route('edit-kerjasama', $item->id_kerjasama) }}"><i
                                                                 class="icon-ganteng fa-solid fa-pen-to-square"></i></a>
+                                                        @endif
                                                         <a href="{{ route('detail-kerjasama', $item->id_kerjasama) }}"><i
                                                                 class=" ml-1 icon-ganteng fa-solid fa-eye"></i></a>
 
