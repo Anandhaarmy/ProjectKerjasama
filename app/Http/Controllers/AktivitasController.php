@@ -8,6 +8,6 @@ class AktivitasController extends Controller
 {
     public function index()
     {
-        return "adknalndalndl";
+        return view('admin.kerjasama.tambahaktivas');
     }
 }

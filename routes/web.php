@@ -35,7 +35,7 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/hapus-kerjasama/{id}', [KerjasamaController::class, 'destroy'])->name('hapus-kerjasama');
     Route::get('/detail-kerjasama/{id}', [KerjasamaController::class, 'detail'])->name('detail-kerjasama');
     Route::get('/data-kerjasama', [KerjasamaController::class, 'cari'])->name('cari-kerjasama');
-    Route::get('tambah-aktivas/', [AktivitasController::class, 'index']);
+    Route::get('/tambah-aktivitas', [AktivitasController::class, 'index',]);
 });
 Route::get('/test', [HomeController::class, 'dataChartProdi']);
 

@@ -43,7 +43,8 @@
                                                 is-invalid
                                             @enderror"
                                                 id="exampleInputinstansi1" aria-describedby="instansiHelp"
-                                                placeholder="Masukkan Nomor Perusahaan" value="{{ old('nomor_perusahaan') }}">
+                                                placeholder="Masukkan Nomor Perusahaan"
+                                                value="{{ old('nomor_perusahaan') }}">
                                             @error('nomor_perusahaan')
                                                 <div class="alert alert-danger">{{ $message }}</div>
                                             @enderror
@@ -119,7 +120,7 @@
                                                     @enderror
 
                                                 </div>
-                                            
+
                                                 {{-- <div class="col">
                                                 </div>
                                                 <div class="col">
